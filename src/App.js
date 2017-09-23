@@ -12,9 +12,9 @@ class App extends Component {
       <BrowserRouter>
         <BaseLayout>
           <Switch>
+            <Route path='/showpost/:id' component={ShowPost} />
             <Route exact path='/' component={PostList} />
             <Route path='/newpost' component={CreatePost} />
-            <Route path='/showpost/:id' component={ShowPost} />
           </Switch>
         </BaseLayout>
       </BrowserRouter>

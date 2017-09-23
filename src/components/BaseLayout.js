@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 export default class BaseLayout extends Component {
     render() {
         return (
@@ -7,11 +7,7 @@ export default class BaseLayout extends Component {
                 <nav style={{ width: '100%', zIndex: '100' }} className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                     <div className="container nav-container">
                         <NavLink className="navbar-brand" to="/">SRB</NavLink>
-                        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                            Menu
-                        <i className="fa fa-bars"></i>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarResponsive">
+                        <div>
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
                                     <NavLink className="nav-link" exact to="/" activeStyle={{ textDecoration: 'underline' }}>All Posts</NavLink>
@@ -31,31 +27,31 @@ export default class BaseLayout extends Component {
                             <div className="col-lg-8 col-md-10 mx-auto">
                                 <ul className="list-inline text-center">
                                     <li className="list-inline-item">
-                                        <Link to="#">
+                                        <a href="https://www.linkedin.com/in/dakotachantz/">
                                             <span className="fa-stack fa-lg">
                                                 <i className="fa fa-circle fa-stack-2x"></i>
-                                                <i className="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                                <i className="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                                             </span>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li className="list-inline-item">
-                                        <Link to="#">
-                                            <span className="fa-stack fa-lg">
-                                                <i className="fa fa-circle fa-stack-2x"></i>
-                                                <i className="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className="list-inline-item">
-                                        <Link to="#">
+                                        <a href="https://github.com/dakotachantz">
                                             <span className="fa-stack fa-lg">
                                                 <i className="fa fa-circle fa-stack-2x"></i>
                                                 <i className="fa fa-github fa-stack-1x fa-inverse"></i>
                                             </span>
-                                        </Link>
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="https://www.instagram.com/dakotachantz/">
+                                            <span className="fa-stack fa-lg">
+                                                <i className="fa fa-circle fa-stack-2x"></i>
+                                                <i className="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
                                     </li>
                                 </ul>
-                                <p className="copyright text-muted">Copyright &copy; Your Blog 2017</p>
+                                <p className="copyright text-muted">Copyright &copy; Dakota Nichols 2017</p>
                             </div>
                         </div>
                     </div>
